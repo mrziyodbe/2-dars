@@ -1,0 +1,315 @@
+:root {
+  --orange: #d87d4a;
+  --black: #101010;
+  --gray: #f1f1f1;
+  --gray-light: #fafafa;
+  --orange-hover: #fbaf85;
+  --white: #ffffff;
+  --yellow: yellow;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Medium.woff2") format("woff2"),
+    url("../fonts/Manrope-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Light.woff2") format("woff2"),
+    url("../fonts/Manrope-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-ExtraLight.woff2") format("woff2"),
+    url("../fonts/Manrope-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Bold.woff2") format("woff2"),
+    url("../fonts/Manrope-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Regular.woff2") format("woff2"),
+    url("../fonts/Manrope-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-SemiBold.woff2") format("woff2"),
+    url("../fonts/Manrope-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Manrope-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Manrope", "Arial", sans-serif;
+  margin: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.header {
+  display: flex;
+  width: 1440px;
+  height: 336px;
+  justify-content: space-around;
+  background-color: var(--black);
+  padding: 35px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header__logo {
+  width: 143px;
+  height: 25px;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 36px;
+  margin: 0;
+}
+
+.header__link {
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header__link:hover {
+  text-decoration: underline;
+}
+
+.header__shopping {
+  width: 24px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.header__shopping:hover {
+  opacity: 0.6;
+  transform: scale(1.2);
+}
+.hero {
+  background-color: var(--black);
+}
+.hero__title {
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.4px;
+  font-weight: 100;
+  color: var(--white);
+  text-align: center;
+  margin: 0;
+  padding-top: 98px;
+  padding-bottom: 121px;
+}
+
+.product-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding-left: 165px;
+  padding-top: 257px;
+  padding-right: 165px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/* .first_product {
+}
+.product_details {
+} */
+.product_title {
+  width: 445px;
+  height: 88px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.43px;
+  font-family: "Manrope", sans-serif;
+}
+.product_description {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  width: 445px;
+  height: 100px;
+  opacity: 0.5;
+}
+.product_price {
+  font-family: "Manrope", sans-serif;
+  width: 68px;
+  height: 25px;
+  line-height: 24.59px;
+  font-size: 15px;
+}
+/* .product-quantity {
+} */
+
+.quantity-input {
+  text-align: center;
+  width: 120px;
+  height: 48px;
+}
+
+.btn-add-to-cart {
+  font-family: "Manrope", sans-serif;
+  width: 160px;
+  height: 48px;
+  color: var(--white);
+  background-color: var(--orange);
+  cursor: pointer;
+  border-color: var(--orange);
+}
+.features {
+  display: flex;
+  padding-left: 165px;
+  padding-top: 300px;
+  padding-right: 165px;
+  justify-content: space-between;
+}
+.features_title {
+  font-family: "Manrope", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+.features_left {
+  width: 445px;
+}
+.features_left_text {
+  font-family: "Manrope", sans-serif;
+  width: 635px;
+  height: 250px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  width: 445px;
+  height: 100px;
+  opacity: 0.5;
+}
+/* .box {
+} */
+.box-list {
+  width: 350px;
+  height: 192px;
+  list-style: none;
+}
+.box_title {
+  font-family: "Manrope", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+.item-quantity {
+  color: var(--orange);
+  padding-right: 24px;
+  list-style: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.center_image {
+  padding-left: 165px;
+  padding-top: 400px;
+}
+.also_like {
+  width: 1110px;
+  height: 571px;
+  padding-left: 165px;
+  padding-top: 160px;
+}
+.you_also_title {
+  font-family: "Manrope", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+.products {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 64px;
+}
+.product-card {
+  /* display: flex; */
+}
+.product-name {
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.78px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.product-button {
+  display: flex;
+  justify-content: center;
+  width: 160px;
+  height: 48px;
+  display: flex;
+  border: solid;
+  color: var(--white);
+  background-color: var(--orange);
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+}
